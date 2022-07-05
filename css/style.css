@@ -45,6 +45,9 @@ body {
 
 .post-container {
     margin-top: 20px;
+}
+
+.post {
     border-radius: 12px;
     border: 2px solid rgba(0, 0, 0, .5) ;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
