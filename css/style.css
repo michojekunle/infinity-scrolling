@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 html {
@@ -9,9 +10,37 @@ html {
 
 body {
     display:flex;
-    align-items: center;
     justify-content: center;
     background-color: blanchedalmond;
     width:100vw;
+    padding: 60px 0;
 }
 
+.container {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter {
+    width:80%;
+    max-width: 250px;
+    margin-top: 9px;
+}
+
+#search {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    /* border: 2px dashed #fff; */
+    background-color: black;
+    padding: 8px 15px;
+    color: blanchedalmond;
+    font-size: 1rem;
+}
+
+.post-container {
+    
+}
