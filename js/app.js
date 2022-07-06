@@ -5,3 +5,7 @@ const loading = document.querySelector('#loader');
 const getPosts = async () => {
     fetch()
 }
+
+
+
+
