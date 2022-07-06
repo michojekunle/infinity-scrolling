@@ -40,7 +40,6 @@ const showPosts = async () => {
 //my code 
 // function to filter through posts on search
 function filterPosts(e) {
-    console.log(e.target.value);
     const search = e.target.value.toLowerCase();
     const posts = document.querySelectorAll('.post');
 
