@@ -15,6 +15,7 @@ body {
     width:100vw;
     padding: 60px 0;
     padding-bottom: 30px;
+    animation: bgChange 50s ease infinite;
 }
 
 .container {
@@ -99,5 +100,35 @@ body {
     100% {
         opacity: 0;
         transform: translateY(0);
+    }
+}
+
+@keyframes bgChange {
+    0% {
+        background-color: #fff ;    
+    }
+
+    20% {
+        background-color: blanchedalmond ;    
+    }
+
+    35% {
+        background-color:burlywood ;    
+    }
+
+    55% {
+        background-color:rgb(198, 143, 69) ;    
+    }
+
+    75% {
+        background-color:rgb(198, 143, 69) ;    
+    }
+
+    90%{
+        background-color:rgb(154, 87, 0) ;  
+    }
+
+    100%{
+        background-color:#fff ;  
     }
 }
