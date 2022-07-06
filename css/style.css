@@ -18,6 +18,9 @@ body {
     animation: bgChange 50s ease infinite;
 }
 
+h1.main-title {
+    text-align: center;
+}
 .container {
     width: 80%;
     max-width: 500px;
@@ -86,6 +89,14 @@ body {
     animation: load 1s .4s infinite;
 }
 
+audio {
+    position:absolute;
+    top: 5px;
+    height: 40px;
+    background-color: black;
+    animation: bgChange 50s ease infinite;
+}
+
 
 @keyframes load {
     0% {
@@ -105,30 +116,30 @@ body {
 
 @keyframes bgChange {
     0% {
-        background-color: #fff ;    
+        background-color: #fff;    
     }
 
     20% {
-        background-color: blanchedalmond ;    
+        background-color: blanchedalmond;    
     }
 
     35% {
-        background-color:burlywood ;    
+        background-color:burlywood;    
     }
 
     55% {
-        background-color:rgb(198, 143, 69) ;    
+        background-color:rgb(198, 143, 69);    
     }
 
     75% {
-        background-color:rgb(198, 143, 69) ;    
+        background-color:rgb(198, 143, 69);    
     }
 
     90%{
-        background-color:rgb(154, 87, 0) ;  
+        background-color:rgb(154, 87, 0);  
     }
 
     100%{
-        background-color:#fff ;  
+        background-color:#fff;  
     }
 }
