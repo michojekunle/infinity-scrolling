@@ -1,8 +1,6 @@
 const filter = document.querySelector('#search');
 const postContainer = document.querySelector('#post-container');
 const loading = document.querySelector('#loader');
-// console.log(loading);
-
 
 let page = 1;
 let limit = 4;
@@ -23,7 +21,9 @@ const showPosts = async () => {
 
     posts.forEach( post => {
         const postEl = document.createElement('div');
+
         postEl.classList.add('post');
+
         postEl.innerHTML= `
         <h2 class="post-title">
             ${post.title}
@@ -32,6 +32,7 @@ const showPosts = async () => {
             ${post.body}
         </p>
         `;
+
         postContainer.appendChild(postEl);
     })
 }
@@ -80,5 +81,6 @@ window.addEventListener('scroll', () => {
         showLoading();
     }
 });
+
 
 filter.addEventListener('input', filterPosts);
