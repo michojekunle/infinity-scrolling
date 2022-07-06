@@ -17,26 +17,6 @@ const getPosts = async () => {
     return data;
 }
 
-//my code 
-// function to filter through posts on search
-const filterPosts = (e) => {
-    const search = e.target.value.toLowerCase();
-    const posts = document.querySelectorAll('.posts');
-
-    posts.forEach(post => {
-        const title = post.querySelector('.post-title').innerText.toLowerCase();
-
-        const body = post.querySelector('.post-body').innerText.toLowerCase();
-
-        if(title.indexOf(search) > -1 || body.indexOf(search) > -1){
-            post.style.display = 'flex';
-        }
-        else {
-            post.style.display = 'none';
-        }
-    })
-}
- 
 //function to show posts in DOM 
 const showPosts = async () => {
     const posts = await getPosts();
@@ -57,6 +37,27 @@ const showPosts = async () => {
     })
 }
 
+
+//my code 
+// function to filter through posts on search
+function filterPosts(e) {
+    const search = e.target.value.toLowerCase();
+    const posts = document.querySelectorAll('.posts');
+
+    posts.forEach(post => {
+        const title = post.querySelector('.post-title').innerText.toLowerCase();
+
+        const body = post.querySelector('.post-body').innerText.toLowerCase();
+
+        if(title.indexOf(search) > -1 || body.indexOf(search) > -1){
+            post.style.display = 'flex';
+        }
+        else {
+            post.style.display = 'none';
+        }
+    })
+}
+ 
 //show loading while fetching more posts.
 const showLoading = () => {
     loading.style.display = 'flex';
@@ -67,7 +68,7 @@ const showLoading = () => {
             showPosts();
         }, 1000);
 
-    }, 4000);
+    }, 3000);
 };
 
 //Show posts initially
@@ -81,3 +82,4 @@ window.addEventListener('scroll', () => {
     }
 });
 
+filter.addEventListener('input', filterPosts);
