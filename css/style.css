@@ -64,13 +64,13 @@ h1.main-title {
 }
 
 .loader {
-    position: absolute;
+    position: fixed;
     width: 100px;
     display: none;
     align-items: center;
     justify-content: space-around;
     background: none;
-    bottom: 10px ;
+    bottom: 8px ;
 }
 
 .loader .bar {
