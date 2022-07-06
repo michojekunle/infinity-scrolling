@@ -32,7 +32,6 @@ const showPosts = async () => {
             ${post.body}
         </p>
         `;
-
         postContainer.appendChild(postEl);
     })
 }
@@ -41,8 +40,9 @@ const showPosts = async () => {
 //my code 
 // function to filter through posts on search
 function filterPosts(e) {
+    console.log(e.target.value);
     const search = e.target.value.toLowerCase();
-    const posts = document.querySelectorAll('.posts');
+    const posts = document.querySelectorAll('.post');
 
     posts.forEach(post => {
         const title = post.querySelector('.post-title').innerText.toLowerCase();
