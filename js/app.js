@@ -65,9 +65,9 @@ const showLoading = () => {
 
         setTimeout(() => {
             showPosts();
-        }, 500);
+        }, 1000);
 
-    }, 2000);
+    }, 4000);
 };
 
 //Show posts initially

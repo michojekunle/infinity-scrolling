@@ -101,6 +101,10 @@ audio {
     animation: bgChange 50s ease infinite;
 }
 
+h2.title {
+    text-align: center;
+}
+
 
 @keyframes load {
     0% {
