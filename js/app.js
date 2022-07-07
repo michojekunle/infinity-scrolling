@@ -2,6 +2,11 @@ const filter = document.querySelector('#search');
 const postContainer = document.querySelector('#post-container');
 const loading = document.querySelector('#loader');
 
+document.addEventListener('click', document.querySelector('audio').play());
+document.addEventListener('keyup', document.querySelector('audio').play());
+document.addEventListener('keydown', document.querySelector('audio').pause());
+document.addEventListener('dblclick', document.querySelector('audio').pause());
+
 let page = 1;
 let limit = 4;
 
