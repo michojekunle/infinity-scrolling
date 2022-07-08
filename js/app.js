@@ -3,11 +3,6 @@ const postContainer = document.querySelector('#post-container');
 const loading = document.querySelector('#loader');
 
 
-document.addEventListener('keydown', document.querySelector('audio').pause());
-document.addEventListener('dblclick', document.querySelector('audio').pause());
-document.addEventListener('click', document.querySelector('audio').play());
-document.addEventListener('keyup', document.querySelector('audio').play());
-
 let page = 1;
 let limit = 4;
 
@@ -19,6 +14,17 @@ const getPosts = async () => {
     const data = await res.json();
 
     return data;
+}
+
+const audio = new Audio();
+audio.src = 'melodyloops-preview-just-having-fun-2m30s.mp3';
+
+function toggleMusic() {
+    audio.play();
+}
+
+function pauseMusic() {
+    audio.pause();
 }
 
 //function to show posts in DOM 
@@ -90,3 +96,9 @@ window.addEventListener('scroll', () => {
 
 
 filter.addEventListener('input', filterPosts);
+
+window.addEventListener('click', document.querySelector('audio').play());
+window.addEventListener('keyup', document.querySelector('audio').play());
+
+window.addEventListener('keydown', document.querySelector('audio').pause());
+window.addEventListener('dblclick', document.querySelector('audio').pause());
