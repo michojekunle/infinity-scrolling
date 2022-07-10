@@ -62,8 +62,9 @@ button#music-btn {
     cursor: pointer;
     font-size: 1.2rem;
 }
+-=]
 
-button#pause-music-btn {
+-button#pause-music-btn {
     position: fixed;
     right: 10px;
     bottom:20px;
@@ -115,14 +116,6 @@ button#pause-music-btn {
 
 .bar:nth-child(3){
     animation: load 1s .4s infinite;
-}
-
-audio {
-    position:absolute;
-    top: 5px;
-    height: 40px;
-    background-color: black;
-    animation: bgChange 50s ease infinite;
 }
 
 h2.title {
