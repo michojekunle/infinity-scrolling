@@ -62,9 +62,8 @@ button#music-btn {
     cursor: pointer;
     font-size: 1.2rem;
 }
--=]
 
--button#pause-music-btn {
+button#pause-music-btn {
     position: fixed;
     right: 10px;
     bottom:20px;
